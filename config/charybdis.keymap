@@ -4,12 +4,15 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
+#define DEFAULT 0
+#define NUMBER  1
+#define FN  2
+#define HOTKEY  3
+
 / {
 
     combos {
         compatible = "zmk,combos";
-
-
 
         combo_lbrc {
             timeout-ms = <50>;
@@ -90,13 +93,8 @@
         };
     };
 
-#define DEFAULT 0
-#define NUMBER  1
-#define FN  2
-#define HOTKEY  3
-
     keymap {
-        compatible = "zmk,keymap"h;
+        compatible = "zmk,keymap";
 
         default_layer {
             label = "DEFAULT";
