@@ -17,3 +17,27 @@
         , <&pro_micro 4 (GPIO_ACTIVE_HIGH)> // COL5
     ;
 };
+
+/ {
+    chosen {
+        zmk,display = &oled;
+    };
+};
+
+&i2c0 {
+    oled: ssd1306@3c {
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;
+        label = "HI";
+        width = <128>;
+        height = <32>;
+        segment-offset = <0>;
+        page-offset = <0>;
+        display-offset = <0>;
+        multiplex-ratio = <31>;
+        segment-remap;
+        com-invdir;
+        prechargep = <0x22>;
+    };
+};
+
