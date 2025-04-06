@@ -19,6 +19,14 @@
             bindings = <&kp>, <&kp>;
         };
 
+        htm: hold_tap-modifier {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
         hmt: hold_mouse_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -118,7 +126,7 @@
             bindings = <
             &lt 2 TAB   &ht N1 Q  &ht N2 W       &ht N3 E   &ht N4 R      &ht N5 T                           &ht N6 Y          &ht N7 U      &ht N8 I      &ht N9 O      &ht N0 P     &kp BACKSPACE
             &kp ESC     &kp A  &kp S       &kp D         &kp F      &kp G                           &kp H          &kp J      &kp K      &kp L      &kp SEMI  &kp SQT
-            &kp LSHFT   &ht LCTRL Z    &ht LGUI X       &kp C    &ht LALT V      &kp B              &kp N          &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp BSLH
+            &kp LSHFT   &htm LCTRL Z    &htm LGUI X       &kp C    &htm LALT V      &kp B              &kp N          &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp BSLH
                                                     &mkp LCLK  &lt 3 SPACE &mo 1                    &mkp LCLK &hmt RCLK ENTER    &mkp RCLK
 
             >;
