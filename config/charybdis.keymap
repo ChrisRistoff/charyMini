@@ -150,9 +150,9 @@
         hotkey_layer {
             label = "HOTKEY";
             bindings = <
-            &none  &none    &kp LS(LBKT)     &kp UP    &kp LS(RBKT)        &none   &ht N1 LS(N1) &ht N1 LS(N2)  &ht N3 LS(N3)    &kp MINUS  &kp BACKSPACE
-            &none  &none    &kp LEFT  &kp DOWN  &kp RIGHT    &none         &none  &ht N4 LS(N4)  &ht N5 LS(N5)  &ht N6 LS(N6)    &none  &none
-            &kp LSHFT &none    &none     &none     &none        &none         &none  &ht N7 LS(N7) &ht N8 LS(N8)  &ht N9 LS(N9)   &ht N0 LS(N0)  &none
+            &none  &none    &kp LS(LBKT)     &kp UP    &kp LS(RBKT)  &none       &none   &ht LS(N1) N1 &ht LS(N2) N2  &ht LS(N3) N3    &kp MINUS  &kp BACKSPACE
+            &none  &none    &kp LEFT  &kp DOWN  &kp RIGHT    &none         &none  &ht LS(N4) N4  &ht LS(N5) N5  &ht LS(N6) N6    &none  &none
+            &kp LSHFT &none    &none     &none     &none        &none         &none  &ht LS(N7) N7 &ht LS(N8) N8  &ht LS(N9) N9   &ht LS(N0) N0  &none
                                       &none     &none        &none         &none    &kp ENTER     &none
             >;
         };
