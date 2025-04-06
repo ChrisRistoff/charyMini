@@ -127,7 +127,7 @@
         number_layer {
             label = "NUMBER";
             bindings = <
-            &none         &kp N1         &kp N2        &kp N3         &kp N4      &kp N5      &kp N6  &kp N7   &kp N8   &kp N9    &kp N0    &kp EQUAL
+            &kp GRAVE     &kp N1         &kp N2        &kp N3         &kp N4      &kp N5      &kp N6  &kp N7   &kp N8   &kp N9    &kp N0    &kp EQUAL
             &kp F1        &kp F2         &kp F3        &kp F4         &kp F5      &kp F6      &kp F7  &kp F8   &kp F9   &kp F10   &kp F11   &kp F12
             &kp LSHFT     &mkp MCLK      &kp C_VOL_DN  &kp C_VOL_UP   &none       &none       &none   &none    &none    &none     &none     &kp KP_DOT
                                          &none         &none          &none       &none       &none   &none
@@ -144,14 +144,15 @@
                                                  &kp F1   &kp F2   &kp F3           &none         &none         &none
 
             >;
+
         };
 
         hotkey_layer {
             label = "HOTKEY";
             bindings = <
-            &none  &none    &kp LS(LBKT)     &kp UP    &kp LS(RBKT)        &none         &none  &none     &kp UP     &none      &none  &kp MINUS
-            &none  &none    &kp LEFT  &kp DOWN  &kp RIGHT    &none         &none  &kp LEFT  &kp DOWN   &kp RIGHT  &none  &none
-            &kp LSHFT &none    &none     &none     &none        &none         &none  &none     &none      &none      &none  &none
+            &none  &none    &kp LS(LBKT)     &kp UP    &kp LS(RBKT)        &none   &ht N1 LS(N1) &ht N1 LS(N2)  &ht N3 LS(N3)    &kp MINUS  &kp BACKSPACE
+            &none  &none    &kp LEFT  &kp DOWN  &kp RIGHT    &none         &none  &ht N4 LS(N4)  &ht N5 LS(N5)  &ht N6 LS(N6)    &none  &none
+            &kp LSHFT &none    &none     &none     &none        &none         &none  ht N7 LS(N7) &ht N8 LS(N8)  &ht N9 LS(N9)   &ht N0 LS(N0)  &none
                                       &none     &none        &none         &none    &kp ENTER     &none
             >;
         };
