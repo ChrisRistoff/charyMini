@@ -132,7 +132,7 @@
             &none  &none    &kp LS(LBKT)     &kp UP    &kp LS(RBKT)  &none       &none   &ht LS(N1) N1 &ht LS(N2) N2  &ht LS(N3) N3    &kp MINUS  &kp BACKSPACE
             &none  &none    &kp LEFT  &kp DOWN  &kp RIGHT    &none         &none  &ht LS(N4) N4  &ht LS(N5) N5  &ht LS(N6) N6    &none  &none
             &kp LSHFT &none    &none     &none     &none        &none         &none  &ht LS(N7) N7 &ht LS(N8) N8  &ht LS(N9) N9   &ht LS(N0) N0  &none
-                                      &none     &none        &none         &none    &kp ENTER     &none
+                                      &none     &none        &none          &mkp LCLK &hmt RCLK ENTER    &none
             >;
         };
 
