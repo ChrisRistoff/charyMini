@@ -9,6 +9,8 @@
 #define FN  2
 #define HOTKEY  3
 
+#define G_SNIPE &mt 0 G &sensor_snipe
+
 / {
     behaviors {
         ht: hold_tap {
@@ -96,7 +98,7 @@
             label = "DEFAULT";
             bindings = <
             &lt 2 TAB   &ht N1 Q  &ht N2 W       &ht N3 E   &ht N4 R      &ht N5 T                           &ht N6 Y          &ht N7 U      &ht N8 I      &ht N9 O      &ht N0 P     &kp BACKSPACE
-            &kp ESC     &kp A  &kp S       &kp D         &kp F      &htm SNIPE_CPI G                           &kp H          &kp J      &kp K      &kp L      &kp SEMI  &kp SQT
+            &kp ESC     &kp A  &kp S       &kp D         &kp F      G_SNIPE                           &kp H          &kp J      &kp K      &kp L      &kp SEMI  &kp SQT
             &kp LSHFT   &htm LCTRL Z    &htm LGUI X       &kp C    &htm LALT V      &kp B              &kp N          &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp BSLH
                                                     &mkp LCLK  &lt 3 SPACE &mo 1                    &mkp LCLK &hmt RCLK ENTER    &mkp RCLK
 
@@ -107,7 +109,7 @@
             label = "NUMBER";
             bindings = <
             &kp GRAVE     &kp N1         &kp N2        &kp N3         &kp N4      &kp N5      &kp N6  &kp N7   &kp N8   &kp N9    &kp N0    &kp EQUAL
-            &kp F1        &kp F2         &kp F3        &kp F4         &kp F5      &htm SNNIPE_CPI F6      &kp F7  &kp F8   &kp F9   &kp F10   &kp F11   &kp F12
+            &kp F1        &kp F2         &kp F3        &kp F4         &kp F5      &kp F6      &kp F7  &kp F8   &kp F9   &kp F10   &kp F11   &kp F12
             &kp LSHFT     &mkp MCLK      &kp C_VOL_DN  &kp C_VOL_UP   &none       &none       &none   &none    &none    &none     &none     &kp KP_DOT
                                          &none         &none          &none       &none       &none   &none
 
