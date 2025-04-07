@@ -9,8 +9,6 @@
 #define FN  2
 #define HOTKEY  3
 
-#define G_SNIPE &mt G pointer_snipe
-
 / {
     behaviors {
         ht: hold_tap {
@@ -98,7 +96,7 @@
             label = "DEFAULT";
             bindings = <
             &lt 2 TAB   &ht N1 Q  &ht N2 W       &ht N3 E   &ht N4 R      &ht N5 T                           &ht N6 Y          &ht N7 U      &ht N8 I      &ht N9 O      &ht N0 P     &kp BACKSPACE
-            &kp ESC     &kp A  &kp S       &kp D         &kp F      G_SNIPE                           &kp H          &kp J      &kp K      &kp L      &kp SEMI  &kp SQT
+            &kp ESC     &kp A  &kp S       &kp D         &kp F      &kp G                           &kp H          &kp J      &kp K      &kp L      &kp SEMI  &kp SQT
             &kp LSHFT   &htm LCTRL Z    &htm LGUI X       &kp C    &htm LALT V      &kp B              &kp N          &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp BSLH
                                                     &mkp LCLK  &lt 3 SPACE &mo 1                    &mkp LCLK &hmt RCLK ENTER    &mkp RCLK
 
