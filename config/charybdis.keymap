@@ -87,6 +87,14 @@
             bindings = <&kp CAPSLOCK>; // caps
             layers = <0>;
         };
+
+        equal {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&kp EQUAL>; // caps
+            layers = <0>;
+        };
+
     };
 
     keymap {
