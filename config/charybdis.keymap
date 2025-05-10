@@ -91,14 +91,14 @@
         equal {
             timeout-ms = <50>;
             key-positions = <8 9>;
-            bindings = <&kp EQUAL>; // caps
+            bindings = <&kp EQUAL>;
             layers = <0>;
         };
 
         minus {
             timeout-ms = <50>;
             key-positions = <7 8>;
-            bindings = <&kp MINUS>; // caps
+            bindings = <&kp MINUS>;
             layers = <0>;
         };
     };
@@ -109,7 +109,8 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-            &lt 2 TAB   &ht N1 Q  &ht N2 W       &ht N3 E   &ht N4 R      &ht N5 T                           &ht N6 Y          &ht N7 U      &ht N8 I      &ht N9 O      &ht N0 P     &kp BACKSPACE
+            // &lt 2 TAB   &ht N1 Q  &ht N2 W       &ht N3 E   &ht N4 R      &ht N5 T                           &ht N6 Y          &ht N7 U      &ht N8 I      &ht N9 O      &ht N0 P     &kp BACKSPACE
+            &lt 2 TAB   &kp Q  &kp W       &kp E   &kp R      &kp T                           &kp Y          &kp U      &kp I      &kp O      &kp P     &kp BACKSPACE
             &kp ESC     &kp A  &kp S       &kp D         &kp F      &kp G                           &kp H          &kp J      &kp K      &kp L      &kp SEMI  &kp SQT
             &kp LSHFT   &htm LCTRL Z    &htm LGUI X       &kp C    &htm LALT V      &kp B              &kp N          &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp BSLH
                                                     &mkp LCLK  &lt 3 SPACE &mo 1                    &mkp LCLK &hmt RCLK ENTER    &mkp RCLK
@@ -120,8 +121,8 @@
         number_layer {
             label = "NUMBER";
             bindings = <
-            &kp GRAVE     &kp N1         &kp N2        &kp N3         &kp N4      &kp N5      &kp N6  &kp N7   &kp N8   &kp N9    &kp N0    &kp EQUAL
-            &kp F1        &kp F2         &kp F3        &kp F4         &kp F5      &kp F6      &kp F7  &kp F8   &kp F9   &kp F10   &kp F11   &kp F12
+            &kp GRAVE     &kp N1         &kp N2        &kp N3         &kp N4      &kp N5      &kp N6  &kp N7   &kp N8   &kp N9    &kp N0    &kp BACKSPACE
+            &kp KC_PSCR   &kp F1         &kp F2        &kp F3         &kp F4      &kp F5      &kp F6  &kp F7   &kp F8   &kp F9    &kp F10   &kp F11
             &kp LSHFT     &mkp MCLK      &kp C_VOL_DN  &kp C_VOL_UP   &none       &none       &none   &none    &none    &none     &none     &kp KP_DOT
                                          &none         &none          &none       &none       &none   &none
 
